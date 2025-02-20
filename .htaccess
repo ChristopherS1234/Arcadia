@@ -1,0 +1,21 @@
+
+# Protection contre l'affichage de la structure des répertoires
+Options -Indexes
+
+# Protection contre les injections de fichiers
+<FilesMatch "(?i)\.(php|php3|php4|php5)$">  
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Autoriser uniquement les fichiers PHP nécessaires
+<Files "index.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# Headers de sécurité
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-Content-Type-Options "nosniff"
+
