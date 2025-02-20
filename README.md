@@ -1,4 +1,4 @@
-# Zoo Arcadia 🦁
+# Zoo Arcadia
 
 Bienvenue sur **Zoo Arcadia**, un site web pour la gestion d’un zoo avec un espace d’administration sécurisé.
 
