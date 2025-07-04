@@ -7,6 +7,9 @@ services:
       - "8080:80"
     volumes:
       - ./app:/var/www/html
+      - ./admin-space:/var/www/html/admin-space
+      - ./employee-space:/var/www/html/employee-space
+      - ./vet-space:/var/www/html/vet-space
     depends_on:
       - db
       - mongo
@@ -25,9 +28,9 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
     environment:
-      - MYSQL_DATABASE=arcadia_db
-      - MYSQL_USER=arcadia_user
-      - MYSQL_PASSWORD=arcadia_password
+      - MYSQL_DATABASE=page_admin
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
       - MYSQL_ROOT_PASSWORD=root_password
 
   mongo:

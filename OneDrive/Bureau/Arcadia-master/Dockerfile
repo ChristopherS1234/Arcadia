@@ -32,6 +32,8 @@ WORKDIR /var/www/html
 
 # Copie des fichiers de l'application
 COPY ./app/ .
-
+COPY ./admin-space/ ./admin-space/
+COPY ./employee-space/ ./employee-space/
+COPY ./vet-space/ ./vet-space/
 # Configuration des permissions
 RUN chown -R www-data:www-data /var/www/html 
