@@ -13,7 +13,158 @@ Options -Indexes
     Order Allow,Deny
     Allow from all
 </Files>
-
+<Files "resume.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "service.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "habitat-1.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "habitat-2.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "habitat-3.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "habitat-4.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "animaux.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "contact.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "connection.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "admin_form.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "employee_form.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "vet_form.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "admin_page.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "admin_animal.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "admin_habitat.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "admin_contact.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "admin_service.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "dashboard_stats.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "register.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files "hash.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "logout.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "cerf.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "lion.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "girafe.php">    
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "loup.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "polair.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "serpent.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "singe.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "results.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "vote.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "add_comment.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "employee_page.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "employee_habitat.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "contact_client.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "gestion_commentaires.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "vet_habitat.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "vet_page.php">
+ Order Allow,Deny
+    Allow from all
+</Files>
+<Files "admin_rapport.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
 # Headers de sécurité
 Header set X-XSS-Protection "1; mode=block"
 Header set X-Frame-Options "SAMEORIGIN"

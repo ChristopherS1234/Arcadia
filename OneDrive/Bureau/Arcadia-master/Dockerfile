@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Installation de l'extension MongoDB
-RUN pecl install mongodb \
+RUN pecl install mongodb-1.21.0 \
     && docker-php-ext-enable mongodb
 
 # Installation des extensions PHP
@@ -25,15 +25,12 @@ RUN docker-php-ext-install \
     zip
 
 # Activation du module rewrite d'Apache
-RUN a2enmod rewrite
+RUN a2enmod rewrite headers
 
 # Configuration du répertoire de travail
 WORKDIR /var/www/html
+RUN chmod -R 755 /var/www/html
 
-# Copie des fichiers de l'application
-COPY ./app/ .
-COPY ./admin-space/ ./admin-space/
-COPY ./employee-space/ ./employee-space/
-COPY ./vet-space/ ./vet-space/
+
 # Configuration des permissions
 RUN chown -R www-data:www-data /var/www/html 
