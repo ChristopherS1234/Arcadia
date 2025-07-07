@@ -8,6 +8,8 @@ services:
     depends_on:
       - db
       - mongo
+    restart: unless-stopped
+    
     environment:
       - DB_HOST=db
       - DB_USER=arcadia_user
