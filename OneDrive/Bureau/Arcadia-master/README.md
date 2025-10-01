@@ -10,7 +10,7 @@ Bienvenue sur **Zoo Arcadia**, un site web pour la gestion d’un zoo avec un es
 2. Importer la base de données
 mysql -u root -proot -P 8889 -h 127.0.0.1 < database/zoo_arcadia.sql
 
-3. Lancer le serveur avec MAMP et accéder à http://localhost/Zoo-Arcadia
+3. Lancer le projet sur docker et accéder à http://localhost/Zoo-Arcadia
 
 # Technologies utilisées
 PHP, MySQL, Bootstrap
